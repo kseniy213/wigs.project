@@ -1,0 +1,123 @@
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "aside header"
+                         "aside main";
+    grid-template-columns: 252px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+/*aside*/
+
+.aside{
+    grid-area: aside;
+    background-color: white;
+    padding: 51px 55px;
+} 
+
+.aside ul{
+    display: grid;
+    gap: 30px;
+}
+
+.aside li{
+    padding-left: 35px;
+    position: relative;
+}
+
+.aside li ::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    background-image: url();
+}
+
+.aside .new-in ::before{
+    background-image: url(/img/light.png);
+}   
+
+.aside .clothing ::before{
+    background-image: url(/img/coat.png);
+}
+
+.aside .shoes ::before{
+    background-image: url(/img/shoes.png);
+}
+
+.aside .accessories ::before{
+    background-image: url(/img/Accessories.png);
+}
+
+.aside .actiw ::before{
+    background-image: url(/img/Activewear.png);
+}
+
+.aside .gl ::before{
+    background-image: url(/img/Gifts&Living.png);
+}
+
+.aside .insp ::before{
+    background-image: url(/img/Inspiration.png);
+}
+
+.aside nav a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.7099px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/*aside end */
+
+.main{
+    grid-area: main;
+}
+
+.main  img{
+    max-width: 539px;
+    gap: 21px;
+    grid-template-rows: 539px 259px 259px;
+}
+
+
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header ul{
+    display: flex;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    gap: 42px;
+    padding-top: 46px;
+    padding-left: 136px;
+    padding-bottom: 76px;
+}
+
+.header span{
+    position: absolute;
+    top: 49px;
+}
+
+
+
+.explore{
+    margin-top: 57px;
+    margin-bottom: 54px;    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000; 
+}

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #eee;
+} 
+
+main, body {
+    height: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+ul{
+    text-decoration: none;
+}
+
